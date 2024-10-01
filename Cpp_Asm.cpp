@@ -5,9 +5,9 @@ int add(int a, int b){
 	int result;
 
 	__asm__ ("addl %%ebx, %%eax;"
-			:"=a" (result)
-			: "a" (a), "b" (b)
-			);
+		:"=a" (result)
+		: "a" (a), "b" (b)
+		);
 
 return result;
 
