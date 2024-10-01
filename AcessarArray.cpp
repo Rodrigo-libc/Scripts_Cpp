@@ -1,20 +1,24 @@
 #include <iostream>
-using namespace std;
 
 int main(int argc, char *argv[])
 {
-    int Numeros[3][4]; // Declaração sem inicialização
+	
+	int array[3][4];   	
+	//Array
+	//|--|--|--|--|
+	//|--|--|--|50|
+	//|--|30|20|--|
+	     
+	array[2][1] = 30; //Linha 3 Coluna 2
+	array[1][3] = 50; //Linha 2 Coluna 4
+	array[2][2] = 20; //Linha 3 Coluna 3
+    
+	std::cout << "Acessando o valor: " <<array[2][1] << std::endl;
 
-    // Atribuição de um valor específico
-    Numeros[0][1] = 30;
+	std::cout << "Acessando o valor: " <<array[1][3] << std::endl;
 
-    // Acessando valores
-    cout << "Acessando o valor= " << Numeros[0][1] << endl;
+	std::cout << "Acessando o valor: " <<array[2][2] << std::endl;
 
-    // Acessando valores que não foram inicializados explicitamente
-    cout << "Acessando o valor= " << Numeros[0][3] << endl;
-    cout << "Acessando o valor= " << Numeros[1][0] << endl;
-    cout << "Acessando o valor= " << Numeros[2][2] << endl;
 
-    return 0;
+	return 0;
 }
