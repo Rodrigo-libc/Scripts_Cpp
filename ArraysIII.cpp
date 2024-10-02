@@ -1,20 +1,25 @@
+#include <cstdio>
 #include <iostream>
-using namespace std;
-
 int main(int argc, char *argv[])
 {
-	string valores[5];
-	
-		cout <<"-Digite os valores-" <<endl;
 
-for (int i = 0; i <= 4; i++){
-		cout << "Digite o valor: " <<i+1 <<endl;
-		cin >> valores[i];
-}
-	cout <<"\n";
+	int valores[5];
 
-for (int j =0; j <= 4; j++)
-		cout <<j+1 <<":valor do Array: " <<valores[j] <<endl;
+		std::cout << "Digite os valores: " << std::endl;
+
+		for (int i = 0; i <= 4 ; i++) {
+		
+			std::cout << "Digite o valor: " <<i+1 << std::endl;
+			std::cin >> valores[i];
+		}
+
+		std::cout << "\n" << std::endl;
+
+		for (int j = 0; j <= 4; j++) {
+		
+			std::cout <<j+1 <<")Valores do array: " <<valores[j] << std::endl;
+		}
+
 
 	return 0;
 }
