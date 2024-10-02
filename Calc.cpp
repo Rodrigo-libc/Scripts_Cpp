@@ -1,30 +1,27 @@
 #include <iostream>
 
-using namespace std;
-
 int main(int argc, char *argv[])
 {
 	int num1, num2, soma, sub, multi, div;
 
-	cout << "Seja bem vindo a nossa primeira calculadora!" <<endl;
-	cout <<"Digite o primeiro número" <<endl;
+	std::cout << "Seja bem vindo a nossa primeira calculadora!" <<std::endl;
+	std::cout <<"Digite o primeiro número" <<std::endl;
 
-	cin >> num1;
+	std::cin >> num1;
 
-	cout <<"Digite o segundo número!" <<endl;
+	std::cout <<"Digite o segundo número!" <<std::endl;
 
-	cin >> num2;
+	std::cin >> num2;
 
 	soma = num1 + num2;
 	sub = num1 - num2;
 	multi = num1 * num2;
 	div = num1 / num2;
 
-	cout << "A soma é = " <<num1 + num2 <<endl;
-	cout << "A subtração é = " <<num1 - num2 <<endl;
-	cout << "A multiplicação é = " <<num1 * num2 <<endl;
-	cout << "A Divisão é " <<num1 / num2 <<endl;
-
+	std::cout << "A soma é = " <<soma <<std::endl;
+	std::cout << "A subtração é = " <<sub <<std::endl;
+	std::cout << "A multiplicação é = " <<multi <<std::endl;
+	std::cout << "A Divisão é " <<div <<std::endl;
 
 	return 0;
 }
